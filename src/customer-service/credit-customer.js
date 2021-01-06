@@ -5,7 +5,11 @@ export function getCreditLimit() {
 }
 
 export default class CreditCustomer extends Customer {
-    credit = 21000;
+
+    constructor(name, mobile, credit) {
+        super(name, mobile);
+        this.credit = credit;
+    }
 
     getBalance(payment) {
         return this.credit - payment;

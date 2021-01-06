@@ -1,6 +1,9 @@
 export class Customer {
-    name = "Tharindu";
-    mobile = "0774935895";
+
+    constructor(name, mobile) {
+        this.name = name;
+        this.mobile = mobile;
+    }
 
     getSalary() {
         return 12000;

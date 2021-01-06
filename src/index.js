@@ -12,9 +12,7 @@ const jobs = [
 ]
 
 const filteredJobs = jobs.filter(job => job.indexOf("E") === 1);
-const liJobs = jobs.map(function (job) {
-    return `<li>${job}</li>`;
-})
+const liJobs = jobs.map(job => `<li>${job}</li>`);
 
 const country = {
     city: 'Galle',
@@ -31,5 +29,6 @@ const student = {name: 'Tharindu'};
 const employee = {mobile: '0774935895'};
 const person = {...student, ...employee, age: 23};
 
-console.log(new CreditCustomer().getBalance(2000));
+console.log(new CreditCustomer('Tharindu', '0774935895', 5000).getBalance(2000));
 console.log(getCreditLimit());
+
